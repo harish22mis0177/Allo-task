@@ -45,7 +45,8 @@ export async function GET() {
 
     return NextResponse.json(result);
   } catch (error) {
-    console.error('[GET /api/products]', error);
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
-  }
+  console.error('FULL PRODUCTS ERROR:', error);
+
+  throw error;
+}
 }
