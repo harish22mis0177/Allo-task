@@ -1,8 +1,9 @@
+
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { CreateReservationSchema } from '@/lib/schemas';
 
-export const dynamic = 'force-dynamic';
 
 const EXPIRY_MINUTES = parseInt(process.env.RESERVATION_EXPIRY_MINUTES || '10', 10);
 
