@@ -1,14 +1,13 @@
-
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
-import { releaseExpiredReservations } from '@/lib/expiry';
 
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 export async function GET() {
   try {
     // Lazy cleanup of expired reservations before returning stock data
-    await releaseExpiredReservations();
+ 
 
     const products = await prisma.product.findMany({
       include: {
