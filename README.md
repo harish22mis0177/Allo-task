@@ -1,7 +1,12 @@
 # Allo Inventory — Take-Home Exercise
 
+Submitted by: Harish R  |  Register Number: 22MIS0177
+
 A multi-warehouse inventory and reservation system built with Next.js 14, Prisma, Supabase (PostgreSQL), TypeScript, and Tailwind CSS.
 
+## 🌐 Deployment (Vercel)
+
+>https://allo-task-2ghj.vercel.app/
 ---
 
 ## 🏗️ Architecture Overview
@@ -122,12 +127,7 @@ See **TESTING.md** for how to verify all endpoints and concurrency behavior.
 
 ---
 
-## 🌐 Deployment (Vercel)
 
-```bash
-npm install -g vercel
-vercel --prod
-```
 
 Set the same env vars in Vercel Dashboard → Project → Settings → Environment Variables.
 
